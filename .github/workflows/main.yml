@@ -28,5 +28,5 @@ jobs:
           context: .
           push: true
           tags: your-dockerhub-username/your-app-name:latest
-          secrets:
-            OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
