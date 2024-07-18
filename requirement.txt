@@ -1,0 +1,4 @@
+Flask==2.0.3
+mysql-connector-python==8.0.28
+openai==0.27.0
+langchain==0.0.9

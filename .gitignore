@@ -1,0 +1,18 @@
+# Python
+*.pyc
+__pycache__/
+
+# Environment
+.env
+
+# Logs
+*.log
+
+# Docker
+docker-compose.yml
+Dockerfile
+
+# Other
+.vscode/
+.idea/
+*.swp
