@@ -14,11 +14,11 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Set environment variables
-ENV FLASK_APP=app.py
+# If you're using a .env file, this should be handled in Docker Compose or at runtime
 ENV OPENAI_API_KEY=${OPENAI_API_KEY}
 
 # Expose port 5000
 EXPOSE 5000
 
-# Run the application
-CMD ["flask", "run", "--host=0.0.0.0", "--port=5000"]
+# Run the application with uvicorn
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "5000"]
